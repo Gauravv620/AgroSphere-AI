@@ -277,7 +277,7 @@ function Fertilizer() {
   const handleFormSubmit = async (formValues) => {
     try {
       const response = await fetch(
-        "https://karthikfertapi.onrender.com/predict",
+        "https://agrosphere-fertilizer-api.onrender.com/predict",
         {
           method: "POST",
           headers: {

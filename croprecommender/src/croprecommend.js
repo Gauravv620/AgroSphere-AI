@@ -246,7 +246,7 @@ function Croprecommend() {
   const handleFormSubmit = async (formValues) => {
     try {
       const response = await fetch(
-        "https://karthikcropapi.onrender.com/predict",
+        "https://agrosphere-crop-api.onrender.com/predict",
         {
           method: "POST",
           headers: {
