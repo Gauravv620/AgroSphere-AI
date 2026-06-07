@@ -15,7 +15,10 @@ app.add_middleware(
     allow_headers=["*"],  # You can specify specific headers here if needed
 )
 # Loading Model:
-pickle_in = open("Fertclassifier.pkl", "rb")
+import os
+
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "Fertclassifier.pkl")
+pickle_in = open(MODEL_PATH, "rb")
 classifier = pickle.load(pickle_in)
 
 
